@@ -30,7 +30,7 @@ function NewSlider(el){
 
   // Add custom css classes
   this.el.addClass('newslider-viewport');
-  this.wrapper.addClass('newslider-wrapper')
+  this.wrapper.addClass('newslider-wrapper');
 }
 
 /**
@@ -40,4 +40,9 @@ function NewSlider(el){
 NewSlider.prototype.next = function(){
   console.log('move to next');
   console.log('-> this.el -> ', this.el);
+}
+
+NewSlider.prototype.prev = function(){
+  console.log('move to previuos');
+  console.log('-> this.el -> ', this.wrapper);
 };

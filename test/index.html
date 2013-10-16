@@ -4,6 +4,27 @@
     <link rel="stylesheet" href="../build/build.css" />
     <title>Test newslider</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(240,255,240);
+      }
+
+      .my-slider {
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: 5px;
+        width: 300px;
+        height: 300px;
+        margin: 0px auto;
+      }
+
+      .my-slider .newslider-wrapper > * {
+        height: 100%;
+      }
+
+    </style>
   </head>
   <body>
 
@@ -24,6 +45,7 @@
 
       var mySlider = new NewSlider('.my-slider');
       mySlider.next();
+      mySlider.prev();
     </script>
   </body>
 </html>
