@@ -1,0 +1,19 @@
+{
+  "name": "newslider",
+  "repo": "pinkTurtle/newslider",
+  "description": "New slider that can be used as carousel",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "1.9.1"
+  },
+  "development": {},
+  "license": "gpl",
+  "scripts": [
+    "index.js",
+    "newslider.js"
+  ],
+  "styles": [
+    "newslider.css"
+  ]
+}
