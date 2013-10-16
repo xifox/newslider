@@ -10,8 +10,7 @@
   "development": {},
   "license": "gpl",
   "scripts": [
-    "index.js",
-    "newslider.js"
+    "index.js"
   ],
   "styles": [
     "newslider.css"

@@ -20,7 +20,10 @@
 
     <script src="../build/build.js"></script>
     <script>
-      require('newslider');
+      var NewSlider = require('newslider');
+
+      var mySlider = new NewSlider('.my-slider');
+      mySlider.next();
     </script>
   </body>
 </html>
