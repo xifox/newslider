@@ -1,8 +1,9 @@
 
 # New Slider
 
-  This is just another jquery slider that could be used as carousel too. For
-  now it is in development.
+  This is just another jquery slider that could be used as carousel too. 
+  
+  ###### For now it is in development.
 
 ## Installation
 
@@ -29,7 +30,7 @@
   - Make slide rotate automatically
   - Add more transition effects. Just for now, transitions effects are due to
   css transition effects.
-  - Add the ability to work it as a carousel.
+  - Add the ability to work as a carousel.
 
 ## License
 
