@@ -1,13 +1,17 @@
 .newslider-viewport {
   margin: 0px;
   overflow: hidden;
+  position: relative;
 }
 
 .newslider-viewport .newslider-wrapper > * {
   display: inline-block;
+  list-style-type: none;
 }
 
 .newslider-viewport > * {
+  list-style-type: none;
   margin: 0px;
+  position: absolute;
 }
 

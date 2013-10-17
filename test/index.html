@@ -22,11 +22,32 @@
 
       .newslider-wrapper {
         height: 300px;
+        width: 1200px;
+        transition: all 2s;
       }
 
       .my-slider .newslider-wrapper > * {
         height: 100%;
       }
+
+      ul, li, div, menu {
+        margin: 0px;
+        padding: 0px;
+        -webkit-margin-before: 0px;
+        -webkit-margin-after: 0px;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0px;
+        -moz-margin-before: 0px;
+        -moz-margin-after: 0px;
+        -moz-margin-start: 0px;
+        -moz-margin-end: 0px;
+        -moz-padding-start: 0px;
+      }
+      li {
+        width: 200px;
+      }
+
 
     </style>
   </head>
@@ -43,13 +64,25 @@
       </ul>
     </div>
 
+    <a class='nextslide' href='#'>next</a>
+    <a class='prevslide' href='#'>previous</a>
     <script src="../build/build.js"></script>
     <script>
       var NewSlider = require('newslider');
+      var o = require('jquery');
+      var nextslide = o('a.nextslide');
+      var prevslide = o('a.prevslide');
 
       var mySlider = new NewSlider('.my-slider');
-      mySlider.next();
-      mySlider.prev();
+
+      nextslide.click( function (){
+        mySlider.next();
+      });
+
+      prevslide.click( function (){
+        mySlider.prev();
+      });
+
     </script>
   </body>
 </html>

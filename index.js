@@ -28,6 +28,7 @@ function NewSlider(el){
   this.el = o(el);
   this.wrapper = this.el.children();
 
+
   // Add custom css classes
   this.el.addClass('newslider-viewport');
   this.wrapper.addClass('newslider-wrapper');
@@ -37,12 +38,29 @@ function NewSlider(el){
  * Move to next slide
  */
 
+  var x = 0;
+
+/**
+ * Move to next slide
+ */
+
 NewSlider.prototype.next = function(){
   console.log('move to next');
-  console.log('-> this.el -> ', this.el);
+  x = parseInt(x) - 200;
+  console.log(x);
+  this.wrapper.css('left', x + 'px')
+  //console.log('-> this.el -> ', nextslide);
 }
+
+/**
+ * Move to previous slide
+ */
 
 NewSlider.prototype.prev = function(){
   console.log('move to previuos');
-  console.log('-> this.el -> ', this.wrapper);
+  x = parseInt(x) + 200;
+  console.log(x);
+  this.wrapper.css('left', x + 'px')
+  //console.log('-> this.el -> ', this.wrapper);
 };
+
