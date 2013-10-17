@@ -46,7 +46,9 @@ function NewSlider(el){
 
 NewSlider.prototype.next = function(){
   console.log('move to next');
-  x = parseInt(x) - 400;
+  if( x > -1600 ) {
+    x = parseInt(x) - 400;
+  }
   console.log(x);
   this.wrapper.css('left', x + 'px')
   //console.log('-> this.el -> ', nextslide);
@@ -58,7 +60,9 @@ NewSlider.prototype.next = function(){
 
 NewSlider.prototype.prev = function(){
   console.log('move to previuos');
-  x = parseInt(x) + 400;
+  if (x < 0) {
+    x = parseInt(x) + 400;
+  }
   console.log(x);
   this.wrapper.css('left', x + 'px')
   //console.log('-> this.el -> ', this.wrapper);
