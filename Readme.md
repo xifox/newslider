@@ -12,8 +12,10 @@
 
   - html
 
-    A minimal html structure is needed to make this work. It is a simple as to
-    put as many divs as slides you want to have.
+    A minimal html structure is needed to make this work. You need create an
+    html node which will be called from now as viewport; another node inside
+    called wrapper and you will put as many html ndes as slides you want to have
+    into the wrapper html node.
 
   - component
 
