@@ -16,7 +16,20 @@
     A minimal html structure is needed to make this work. You need create an
     html node which will be called from now as viewport; another node inside
     called wrapper and you will put as many html nodes as slides you want to have
-    into the wrapper html node.
+    into the wrapper html node. Here you have an example:
+
+    ```bash
+    <div class="my-slider">
+      <div>
+        <li>Slide 0</li>
+        <li>
+        <img src='tux.jpg' />
+        </li>
+        <iframe width="400" height="300" src="//www.youtube.com/embed/GDSpP405O00?rel=0" frameborder="0" allowfullscreen></iframe>
+        <li>Slide 3</li>
+        <li>Slide 4</li>
+      </div>
+```
 
   - component
 
