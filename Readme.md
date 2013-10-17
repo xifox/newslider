@@ -24,6 +24,13 @@
 ## API
 
 
+## TODO
+
+  - Make slide rotate automatically
+  - Add more transition effects. Just for now, transitions effects are due to
+  css transition effects.
+  - Add the ability to work it as a carousel.
+
 ## License
 
   GPL
