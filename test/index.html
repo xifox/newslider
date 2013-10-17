@@ -11,19 +11,25 @@
         background-color: rgb(240,255,240);
       }
 
+      body * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
       .my-slider {
         background-color: white;
         border: 1px solid grey;
         border-radius: 5px;
         width: 300px;
-        height: 300px;
+        height: 302px;
         margin: 0px auto;
       }
 
       .newslider-wrapper {
         height: 300px;
-        width: 1200px;
-        transition: all 2s;
+        width: 1300px;
+        transition: left 1s;
       }
 
       .my-slider .newslider-wrapper > * {
@@ -45,10 +51,17 @@
         -moz-padding-start: 0px;
       }
       li {
+        height: 300px;
         width: 200px;
         border: 2px solid black;
+        line-height: 300px;
       }
 
+      li img {
+        height: 100%;
+        width: auto;
+        display: block;
+      }
 
     </style>
   </head>
@@ -57,6 +70,7 @@
     <div class="my-slider">
       <ul>
         <li>Slide 0</li>
+        <img src='tux.jpg' />
         <li>Slide 1</li>
         <li>Slide 2</li>
         <li>Slide 3</li>
