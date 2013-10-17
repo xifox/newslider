@@ -6,3 +6,8 @@
 .newslider-viewport .newslider-wrapper > * {
   display: inline-block;
 }
+
+.newslider-viewport > * {
+  margin: 0px;
+}
+
