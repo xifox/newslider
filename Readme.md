@@ -11,7 +11,7 @@
 
 ## Implementation
 
-  - html
+  - ###### html
 
     A minimal html structure is needed to make this work. You need create an
     html node which will be called from now as viewport; another node inside
@@ -32,7 +32,7 @@
     </div>
 ```
 
-  - component
+  - ###### component
 
     You need to install this component into your file structure.
 
