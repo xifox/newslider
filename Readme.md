@@ -10,12 +10,12 @@
 
 ## Implementation
 
-  . html
+  - html
 
     A minimal html structure is needed to make this work. It is a simple as to
     put as many divs as slides you want to have.
 
-  . component
+  - component
 
     You need to install this component into your file structure.
 
