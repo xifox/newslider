@@ -2,17 +2,20 @@
   margin: 0px;
   overflow: hidden;
   position: relative;
+  text-align: left;
 }
 
 .newslider-viewport .newslider-wrapper > * {
   display: inline-block;
   list-style-type: none;
   vertical-align: top;
+  float: left;
 }
 
 .newslider-viewport > * {
   list-style-type: none;
   margin: 0px;
   position: absolute;
+  left: 0px;
 }
 
