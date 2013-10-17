@@ -29,6 +29,7 @@
         <li>Slide 3</li>
         <li>Slide 4</li>
       </div>
+    </div>
 ```
 
   - component
