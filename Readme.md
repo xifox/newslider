@@ -3,7 +3,7 @@
 
   This is just another jquery slider that could be used as carousel too. 
   
-  ###### For now it is in development.
+###### For now it is in development.
 
 ## Installation
 
