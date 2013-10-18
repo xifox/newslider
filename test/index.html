@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../build/build.css" />
     <title>Test newslider</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="../build/build.js"></script>
 
     <style>
       body {
@@ -18,48 +19,34 @@
       }
 
       .my-slider {
-        background-color: white;
-        border: 1px solid grey;
-        border-radius: 5px;
-        width: 402px;
+        background-color: #eee;
+        border: 1px solid red;
+        width: 602px;
         height: 302px;
         margin: 0px auto;
       }
 
-      .newslider-wrapper {
-        height: 300px;
-        width: 2000px;
+      .my-slider > ul {
         transition: left 1s;
       }
 
-      .my-slider .newslider-wrapper > * {
-        height: 100%;
-      }
-
-      ul, li, div, menu {
-        margin: 0px;
-        padding: 0px;
-        -webkit-margin-before: 0px;
-        -webkit-margin-after: 0px;
-        -webkit-margin-start: 0px;
-        -webkit-margin-end: 0px;
-        -webkit-padding-start: 0px;
-        -moz-margin-before: 0px;
-        -moz-margin-after: 0px;
-        -moz-margin-start: 0px;
-        -moz-margin-end: 0px;
-        -moz-padding-start: 0px;
-      }
-      li {
-        height: 300px;
+      .my-slider > ul > li {
         width: 400px;
         border: 2px solid black;
-        line-height: 300px;
         text-align: center;
+        background-color: white;
+        height: 300px;
       }
 
-      li img {
-        height: 100%;
+      .my-slider > ul > li:nth-child(1) {
+        width: 300px;
+      }
+
+      .my-slider > ul > li:nth-child(2) {
+        width: 500px;
+      }
+
+      .my-slider > ul > li img {
         width: auto;
         display: block;
         margin: 0px auto;
@@ -70,27 +57,30 @@
   <body>
 
     <div class="my-slider">
-      <div>
+      <ul>
         <li style='line-height:30px; padding:30px;'>A minimal html structure is needed to make this work. You need create an html node which will be called from now as viewport; another node inside called wrapper and you will put as many html nodes as slides you want to have into the wrapper html node.</li>
         <li>
         <img src='tux.jpg' />
         </li>
+        <li>
         <iframe width="400" height="300" src="//www.youtube.com/embed/GDSpP405O00?rel=0" frameborder="0" allowfullscreen></iframe>
-        <li style='line-height:30px; padding:30px;'>As you saw, you can mix anything you want to have in your slides. Text, Images, Videos (embeeded through iframe), etc...<br /><b>Is not really cool?</b></li>
+        </li>
+        <li style='line-height:30px; padding:30px;'>You can mix anything you want to have in your slides. Text, Images, Videos (embeeded through iframe), etc...<br /></li>
         <li>Slide 4</li>
-      </div>
+      </ul>
     </div>
 
     <a class='nextslide' href='#'>next</a>
     <a class='prevslide' href='#'>previous</a>
-    <script src="../build/build.js"></script>
     <script>
       var NewSlider = require('newslider');
-      var o = require('jquery');
+      var o = require('component-jquery');
       var nextslide = o('a.nextslide');
       var prevslide = o('a.prevslide');
 
       var mySlider = new NewSlider('.my-slider');
+
+      mySlider.goto(3);
 
       nextslide.click( function (){
         mySlider.next();

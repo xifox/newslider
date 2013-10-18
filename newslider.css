@@ -1,21 +1,20 @@
 .newslider-viewport {
   margin: 0px;
-  overflow: hidden;
   position: relative;
-  text-align: left;
+  overflow: hidden;
+}
+
+.newslider-viewport .newslider-wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
 }
 
 .newslider-viewport .newslider-wrapper > * {
   display: inline-block;
-  list-style-type: none;
+  list-style: none;
   vertical-align: top;
   float: left;
 }
-
-.newslider-viewport > * {
-  list-style-type: none;
-  margin: 0px;
-  position: absolute;
-  left: 0px;
-}
-

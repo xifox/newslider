@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "component/jquery": "1.9.1"
+    "component/jquery": "1.9.1",
+    "visionmedia/debug": "*"
   },
   "development": {},
   "license": "gpl",
