@@ -17,10 +17,14 @@
     html node which will be called from now as viewport; another node inside
     called wrapper and you will put as many html nodes as slides you want to have
     into the wrapper html node. Here you have an example:
+    You may use this slider as just a slider, or you can use it as a carousel.
+    All you need to do is define a wider viewport (div class="my-slider")in the
+    exampe.
+    You can define different width, in each slide, just as set in the example.
 
     ```bash
     <div class="my-slider">
-      <div>
+      <ul>
         <li>Slide 0</li>
         <li>
         <img src='tux.jpg' />
@@ -28,7 +32,7 @@
         <iframe width="400" height="300" src="//www.youtube.com/embed/GDSpP405O00?rel=0" frameborder="0" allowfullscreen></iframe>
         <li>Slide 3</li>
         <li>Slide 4</li>
-      </div>
+      </ul>
     </div>
 ```
 
