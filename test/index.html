@@ -70,17 +70,29 @@
       </ul>
     </div>
 
-    <a class='nextslide' href='#'>next</a>
+    <a class='firstslide' href='#'>first</a>
     <a class='prevslide' href='#'>previous</a>
+    <a class='nextslide' href='#'>next</a>
+    <a class='lastslide' href='#'>last</a>
     <script>
       var NewSlider = require('newslider');
       var o = require('component-jquery');
+      var firstslide = o('a.firstslide');
       var nextslide = o('a.nextslide');
       var prevslide = o('a.prevslide');
+      var lastslide = o('a.lastslide');
 
       var mySlider = new NewSlider('.my-slider');
 
       mySlider.goto(3);
+
+      lastslide.click( function (){
+        mySlider.last();
+      });
+
+      firstslide.click( function (){
+        mySlider.first();
+      });
 
       nextslide.click( function (){
         mySlider.next();

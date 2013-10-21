@@ -46,9 +46,25 @@ function NewSlider(el, opts){
 }
 
 /**
- * Move to next slide
+ * Move to first slide
  */
 
+NewSlider.prototype.first = function(){
+  this.goto(0);
+}
+
+
+/**
+ * Move to last slide
+ */
+
+NewSlider.prototype.last = function(){
+  this.goto(this.slides.length - 1);
+}
+
+/**
+ * Move to next slide
+ */
 
 NewSlider.prototype.next = function(){
   this.goto(this.current >= (this.slides.length - 1) ? 0 : this.current + 1);

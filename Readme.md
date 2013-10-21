@@ -33,12 +33,14 @@
 ```
 
     You may use this slider as just a slider, or you can use it as a carousel.
-    All you need to do is define a wider viewport (div class="my-slider")in the exampe.
+    All you need to do is define a wider viewport (div class="my-slider" in the exampe.)
 
     You can define different width, in each slide, just as set in the example.
   - ###### component
 
-    You need to install this component into your file structure.
+    You need to install this component into your file structure. Before you can
+    do it, you may need to instal nodejs and after that install component as
+    well.
 
 ## API
 
