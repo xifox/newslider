@@ -50,6 +50,7 @@ function NewSlider(el, opts){
  */
 
 NewSlider.prototype.first = function(){
+  this.slides.eq(this.current).removeClass("currentslide");
   this.goto(0);
 }
 
@@ -59,6 +60,7 @@ NewSlider.prototype.first = function(){
  */
 
 NewSlider.prototype.last = function(){
+  this.slides.eq(this.current).removeClass("currentslide");
   this.goto(this.slides.length - 1);
 }
 
@@ -67,6 +69,7 @@ NewSlider.prototype.last = function(){
  */
 
 NewSlider.prototype.next = function(){
+  this.slides.eq(this.current).removeClass("currentslide");
   this.goto(this.current >= (this.slides.length - 1) ? 0 : this.current + 1);
 }
 
@@ -75,6 +78,7 @@ NewSlider.prototype.next = function(){
  */
 
 NewSlider.prototype.prev = function(){
+  this.slides.eq(this.current).removeClass("currentslide");
   this.goto((this.current <= 0 ? this.slides.length : this.current) - 1);
 };
 
@@ -103,6 +107,7 @@ NewSlider.prototype.goto = function(n){
 
   function setCurrent(n){
     self.current = n;
+    self.slides.eq(n).addClass("currentslide");
     debug('current slide: %s', self.current);
   };
 
