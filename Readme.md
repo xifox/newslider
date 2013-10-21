@@ -17,10 +17,6 @@
     html node which will be called from now as viewport; another node inside
     called wrapper and you will put as many html nodes as slides you want to have
     into the wrapper html node. Here you have an example:
-    You may use this slider as just a slider, or you can use it as a carousel.
-    All you need to do is define a wider viewport (div class="my-slider")in the
-    exampe.
-    You can define different width, in each slide, just as set in the example.
 
     ```bash
     <div class="my-slider">
@@ -36,6 +32,10 @@
     </div>
 ```
 
+    You may use this slider as just a slider, or you can use it as a carousel.
+    All you need to do is define a wider viewport (div class="my-slider")in the exampe.
+
+    You can define different width, in each slide, just as set in the example.
   - ###### component
 
     You need to install this component into your file structure.
