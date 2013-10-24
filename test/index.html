@@ -84,8 +84,6 @@
 
       var mySlider = new NewSlider('.my-slider');
 
-      mySlider.goto(3);
-
       lastslide.click( function (){
         mySlider.last();
       });
@@ -104,7 +102,11 @@
 
     var slideTimer = window.setInterval(function(){
       mySlider.next();
-    }, 7000);
+    }, 4000);
+
+    mySlider.on('change', function(ind){
+      console.log(ind);
+    });
 
     </script>
   </body>

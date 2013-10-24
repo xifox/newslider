@@ -5,7 +5,9 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
+    "component/emitter": "*",
     "component/jquery": "1.9.1",
+    "component/inherit": "*",
     "visionmedia/debug": "*"
   },
   "development": {},

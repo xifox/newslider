@@ -5,6 +5,8 @@
 
 var o = require('jquery');
 var debug = require('debug')('newslider');
+var Emitter = require('emitter');
+var inherit = require('inherit');
 
 debug('booting %s');
 
@@ -31,6 +33,8 @@ function NewSlider(el, opts){
   // TODO: uncomment
   // if (!(this instanceof NewSlider)) return new NewSlider;
 
+  Emitter.call(this);
+
   // DOM elements
   this.el = o(el);
   this.wrapper = this.el.children();
@@ -40,10 +44,15 @@ function NewSlider(el, opts){
   this.el.addClass('newslider-viewport');
   this.wrapper.addClass('newslider-wrapper');
 
-  this.current = 0;
-
   this.calc();
+  this.goto(0);
 }
+
+/**
+ * Inherits from `Emmiter`.
+ */
+
+inherit(NewSlider, Emitter);
 
 /**
  * Move to first slide
@@ -108,6 +117,7 @@ NewSlider.prototype.goto = function(n){
   function setCurrent(n){
     self.current = n;
     self.slides.eq(n).addClass("currentslide");
+    self.emit('change', n);
     debug('current slide: %s', self.current);
   };
 
