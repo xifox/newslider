@@ -103,7 +103,7 @@ NewSlider.prototype.goto = function(n){
 
   var self = this;
   var sl = this.slides.eq(n);
-  var offx = parseInt(sl.position().left + sl.outerWidth() / 2 - this.dimms.viewport / 2);
+  var offx = parseInt(sl.position().left + sl.width() / 2 - this.dimms.viewport / 2);
 
   if (this.opts.animate) {
     this.wrapper.animate({ 'left': -offx }, function(){
@@ -132,18 +132,18 @@ NewSlider.prototype.goto = function(n){
 
 NewSlider.prototype.calc = function(){
   this.dimms = {
-    viewport: this.el.outerWidth(),
+    viewport: this.el.width(),
     wrapper: 0
   };
 
   // calc wrapper width
   for (var i = 0; i < this.slides.length; i++) {
     var sl = this.slides.eq(i);
-    this.dimms.wrapper += sl.outerWidth();
+    this.dimms.wrapper += sl.width();
   };
 
   // set wrapper width
-  this.wrapper.outerWidth(this.dimms.wrapper);
+  this.wrapper.width(this.dimms.wrapper);
 
   debug('viewport width: %s', this.dimms.viewport);
   debug('wrapper width: %s', this.dimms.wrapper);
