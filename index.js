@@ -63,7 +63,6 @@ NewSlider.prototype.first = function(){
   this.goto(0);
 }
 
-
 /**
  * Move to last slide
  */
